@@ -1,0 +1,30 @@
+{
+  "name": "neoos-docs",
+  "version": "0.0.1",
+  "private": true,
+  "description": "NeoOS organization documentation",
+  "homepage": "https://neoos.github.io",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
+  },
+  "dependencies": {
+    "@docusaurus/core": "latest",
+    "@docusaurus/preset-classic": "latest",
+    "@docusaurus/module-ideal-image": "latest",
+    "clsx": "latest",
+    "prism-react-renderer": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@docusaurus/types": "latest"
+  }
+}
