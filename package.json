@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "description": "NeoOS organization documentation",
-  "homepage": "https://neoos.github.io",
+  "homepage": "https://neoosorganization.github.io/neoos-docs",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -18,7 +18,6 @@
   "dependencies": {
     "@docusaurus/core": "latest",
     "@docusaurus/preset-classic": "latest",
-    "@docusaurus/module-ideal-image": "latest",
     "clsx": "latest",
     "prism-react-renderer": "latest",
     "react": "latest",

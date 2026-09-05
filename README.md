@@ -2,6 +2,12 @@
 
 Docusaurus-based documentation site for the NeoOS organization.
 
+**Live at:** https://neoosorganization.github.io/neoos-docs/ (the org
+login is `NeoOSOrganization`, not `NeoOS` — that name was unavailable,
+so this is a project page under the org's default Pages domain, not
+`neoos.github.io`). Deploys automatically on every push to `main` via
+`.github/workflows/deploy.yml`.
+
 ## Build and Deploy
 
 ```bash

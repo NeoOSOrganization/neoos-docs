@@ -4,10 +4,17 @@ const {themes} = require('prism-react-renderer');
 module.exports = {
   title: 'NeoOS',
   tagline: 'A 64-bit x86_64 OS built from scratch, one milestone at a time',
-  url: 'https://neoos.github.io',
-  baseUrl: '/',
+  // The org login is NeoOSOrganization, not NeoOS (that name was
+  // unavailable) -- so GitHub Pages serves this project page at
+  // neoosorganization.github.io/neoos-docs/, not neoos.github.io.
+  url: 'https://neoosorganization.github.io',
+  baseUrl: '/neoos-docs/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
 
   organizationName: 'NeoOSOrganization',
@@ -32,9 +39,13 @@ module.exports = {
   themeConfig: {
     navbar: {
       title: 'NeoOS',
+      // No standalone homepage exists (docs-only site) -- the default
+      // title/logo link target (baseUrl root) has nothing there, which
+      // Docusaurus's broken-link check correctly flags on every page.
       logo: {
         alt: 'NeoOS Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
+        href: '/docs/intro',
       },
       items: [
         {
@@ -57,8 +68,8 @@ module.exports = {
           title: 'Docs',
           items: [
             { label: 'Getting Started', to: '/docs/getting-started' },
-            { label: 'Architecture', to: '/docs/architecture' },
-            { label: 'Porting Guide', to: '/docs/porting' },
+            { label: 'Architecture', to: '/docs/architecture/scheduler' },
+            { label: 'Porting Guide', to: '/docs/porting-guide' },
           ],
         },
         {
