@@ -1,0 +1,13 @@
+# Docusaurus build
+build/
+.docusaurus/
+
+node_modules/
+npm-debug.log
+
+.idea/
+.vscode/
+*.swp
+
+.DS_Store
+Thumbs.db
